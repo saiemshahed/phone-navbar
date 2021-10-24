@@ -1,0 +1,23 @@
+
+/* @layer components{} can be ignored. */
+
+
+
+  /* .phnnav{
+    @apply transition duration-500 ease-in-out
+  }  */
+  
+  .open{
+    @apply left-0
+  }
+
+  .demo{
+    @apply bg-green-500 h-96 w-96 m-10
+  }
+
+
+
+
+
+
+

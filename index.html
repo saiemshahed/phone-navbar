@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS Starter Pack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="./css/tailwind.css" />
+  </head>
+  <body>
+    <div>
+      <nav class="py-4 bg-gray-400 flex flex-wrap justify-between container mx-auto">
+        <div>
+          <h2 class="uppercase font-semibold text-2xl">NavBar</h2>
+        </div>
+        <div class="text-3xl mr-4 cursor-pointer" id="menu-btn">
+          <i class="fas fa-bars hover:text-gray-200"></i>
+        </div>
+
+      </nav>
+      
+      <div id="mobileMenu" class="lg:hidden overflow-hidden absolute inset-0 left-full bg-black opacity-80 transition-all duration-1000 ease-in-out">
+        <div class="flex justify-end text-4xl cursor-pointer p-4"><i id="closer" class="far fa-window-close text-white"></i></div>
+        <div class="flex flex-col items-center">
+          <div class="w-full py-3 hover:bg-white text-center">
+
+            <a href="#" class="text-2xl text-green-600 hover:text-blue-400">Home</a>
+          </div>
+          <a href="#" class="text-2xl text-green-600 hover:text-blue-400">About</a>
+          <a href="#" class="text-2xl text-green-600 hover:text-blue-400">Contact</a>
+          <a href="#" class="text-2xl text-green-600 hover:text-blue-400">Team</a>
+          <a href="#" class="text-2xl text-green-600 hover:text-blue-400">Vlog</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
